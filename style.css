@@ -1,0 +1,89 @@
+@import "/reset.css";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  background-color: yellowgreen;
+  background-image: url("/bgbg.jpg");
+  background-size: cover;
+  font-family: "Exo 2", sans-serif;
+  color: #fff;
+}
+
+header {
+  display: flex;
+}
+#new-deck {
+  background: yellow;
+  border: none;
+  padding: 0.5em;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+#remaining-cards {
+  margin-left: 0.5em;
+  font-size: 1.2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+/* You win */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 0.3em;
+  margin-bottom: -0.5em;
+}
+
+/* main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+}
+
+.card {
+  border: 1px black solid;
+  background-color: rgba(131, 131, 131, 0.24);
+  border-radius: 5px;
+  width: calc(10em * 5 / 7);
+  height: 10em;
+}
+
+#card1 {
+  margin-top: -4em;
+  margin-bottom: -4em;
+}
+#card2 {
+  margin-bottom: -4em;
+}
+
+div > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* draw button */
+
+#draw-cards {
+  background: yellow;
+  border: none;
+  padding: 0.5em;
+  font-size: 1.3rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+}
+#draw-cards:disabled {
+  cursor: not-allowed;
+}
